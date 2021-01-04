@@ -1,3 +1,4 @@
 .vscode
 db
 .docker-compose.yml
+./api/node_modules/
