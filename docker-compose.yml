@@ -1,0 +1,33 @@
+version: '3.7'
+
+services:
+ api:
+  container_name: nodejs-container
+  build: .
+  environment:
+   - MONGO_URI=mongodb://mongo:27017/usuarios
+   - PORT=3001
+   - NODE_ENV=development
+  depends_on:
+   - mongo
+   - redis
+  volumes:
+   - .:/api/
+  ports:
+   - 3001:3001
+  tty: true
+
+ mongo:
+  container_name: mongo-db
+  image: mongo
+  volumes:
+   - "./db:/data/db"
+
+ redis:
+  container_name: redisgato
+  image: redis
+  command: redis-server
+  volumes:
+   - ./redis:/redis
+  ports:
+   - 6379:6379

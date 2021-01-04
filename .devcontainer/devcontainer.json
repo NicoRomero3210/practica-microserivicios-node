@@ -1,0 +1,10 @@
+{
+    "name":"Node y Mongo",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "api",
+    "workspaceFolder": "/api",
+    "shutdownAction": "stopCompose",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    }
+}

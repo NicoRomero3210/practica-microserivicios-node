@@ -1,0 +1,33 @@
+{
+  "name": "practica-microserivicios-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicoRomero3210/practica-microserivicios-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicoRomero3210/practica-microserivicios-node/issues"
+  },
+  "homepage": "https://github.com/NicoRomero3210/practica-microserivicios-node#readme",
+  "dependencies": {
+    "consul": "^0.39.0",
+    "express": "^4.17.1",
+    "hydra": "^1.8.2",
+    "hydra-cli": "^1.8.0",
+    "kafka-node": "^5.0.0",
+    "mongoose": "^5.11.9",
+    "node-env-file": "^0.1.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
